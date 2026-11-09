@@ -13,7 +13,7 @@ import {
 import type { AgentId, ApplyResult } from "./types.js";
 import { normalizeBaseUrl } from "./fsutil.js";
 
-const VERSION = "0.1.0";
+import { VERSION } from "./version.js";
 
 type Flags = {
   command: string;

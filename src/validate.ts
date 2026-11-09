@@ -1,4 +1,5 @@
 import { DEFAULT_BASE_URL } from "./constants.js";
+import { VERSION } from "./version.js";
 import { normalizeBaseUrl } from "./fsutil.js";
 import type { Model } from "./types.js";
 
@@ -25,7 +26,7 @@ export async function validateApiKey(options: ValidateOptions): Promise<Validate
       headers: {
         Authorization: `Bearer ${apiKey}`,
         Accept: "application/json",
-        "User-Agent": "octafy-helper/0.1.0",
+        "User-Agent": `octafy-helper/${VERSION}`,
       },
       signal: controller.signal,
     });

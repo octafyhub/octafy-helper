@@ -1,6 +1,6 @@
 {
   "name": "@octafy/helper",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Point coding agents and IDEs at Octafy with one command.",
   "type": "module",
   "main": "./dist/index.js",
