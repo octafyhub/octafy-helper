@@ -1,0 +1,63 @@
+{
+  "name": "@octafy/helper",
+  "version": "0.1.1",
+  "description": "Point coding agents and IDEs at Octafy with one command.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "octafy-helper": "dist/cli.js",
+    "octafy": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "test": "node --import tsx --test tests/**/*.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "octafy",
+    "ai",
+    "cli",
+    "opencode",
+    "cline",
+    "continue",
+    "hermes",
+    "openclaw",
+    "openai-compatible"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octafyhub/octafy-helper.git"
+  },
+  "homepage": "https://github.com/octafyhub/octafy-helper#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.10.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  },
+  "bugs": {
+    "url": "https://github.com/octafyhub/octafy-helper/issues"
+  }
+}
